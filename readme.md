@@ -34,8 +34,8 @@
   - playback method: such as through an analog amplifier
   - algorithm: such as on a streaming site
   - broadcast: such as compression applied during radio broadcasting
-- [Bitcrushing](https://youtu.be/84h64lTd8k0?si=2R6m7HdPGxBWk7mf) - Distortion created by reducing the bit depth of a sound.
-- [Downsampling](https://youtu.be/hRhVb6iRArg?si=cj8SaAHlRy1650oL) - To intentionally reduce the sample rate of a piece of audio.
+- __[Bitcrushing](https://youtu.be/84h64lTd8k0?si=2R6m7HdPGxBWk7mf)__ - Distortion created by reducing the bit depth of a sound.
+- __[Downsampling](https://youtu.be/hRhVb6iRArg?si=cj8SaAHlRy1650oL)__ - To intentionally reduce the sample rate of a piece of audio.
 
 #### Distorting instruments
 
@@ -134,7 +134,7 @@
 - __Low vs high frequencies__ - Headroom is the room we have before sound clips. Low frequencies take up more headroom than high frequencies. The more low-end in a mix, the less loud your mix can be.
 - __Alter EQ in context of your mix__ - your changes won't be heard in isolation. Make EQ changes while all other instrument tracks are playing.
 - __How do you know if instruments are in conflict?__ Distortion, typically a fuzzy sound caused by too much amplitude at a particular frequency range.
-- [Tilt EQ](images/tilt_EQ.png) - a particular EQ style available on some plugins. The idea behind tilt is that using the usual filter can interfere with the timbre of a well-balanced sound. For example, attenuating a certain frequency of a piano can make it sound less like a piano. The answer to this is tilt. Tilt is a filter type that allows you to 'tilt' the frequency range around a pivot.
+- __[Tilt EQ](images/tilt_EQ.png)__ - a particular EQ style available on some plugins. The idea behind tilt is that using the usual filter can interfere with the timbre of a well-balanced sound. For example, attenuating a certain frequency of a piano can make it sound less like a piano. The answer to this is tilt. Tilt is a filter type that allows you to 'tilt' the frequency range around a pivot.
 - __Don't EQ vocals much__ - our ears are familiar with how a vocal should sound, so keep adjustments subtle.
 
 # Reverb
