@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="images/recording.png">
+    <img src="images/recording.jpg">
 </p>
 
 # Recording Techniques
@@ -180,9 +180,9 @@
 
 - __Room reverbs__ have prominent early reflections (low `pre-delay`) and a short `decay`. When used delicately, they maintain a sense of intimacy. They sound fairly dry due to the short decay time.
 - __Hall reverbs__ simulate concert halls. Slow early reflections (low `pre-delay`), but longer reverb time (`decay`), and fairly even frequency distribution. Just like in concert halls, hall reverbs can slightly blur the sound, creating overlaps between notes. Often used for orchestral music, choirs, or pads.
-- __Chamber reverbs__ simulates reverb chambers and/or echo rooms built into old music studios. They are a useful all-around reverb and are designed for clarity.
-- __Spring reverb__ simulates artificial (physical) [spring reverb](images/spring_reverb.png). It has a prominent twanging sound. Often used on percussive hits or synthesizer stabs.
-- __Plate reverb__ simulates old large [reverb plates](images/plate_reverb.png) used in the studio, which are 4' by 6' sheets. They have a bright attack, and a warm/dark decay, as higher frequencies decay before the lower ones. When pushed, they can create a distinctive twang. The reflection `density` in this preset stays the same throughout the reverb.
+- [Chamber reverbs](https://youtu.be/Am0ELIQcCgQ?si=vIvY-4iiU7a8vlPd) simulates reverb chambers and/or echo rooms built into old music studios in the 1970s. They are a useful all-around reverb and are designed for clarity.
+- [Spring reverb](https://youtu.be/tU7U-U-n4EQ?si=UnT_Kb85_ZH_wleg)__ simulates a physical spring reverb device that literally uses springs to create reverb. It has a prominent twanging sound. Often used on percussive hits or synthesizer stabs.
+- __[Plate reverb](https://youtu.be/u6eZ_JbmBDw?si=njdGmenV2pd167MK)__ simulates the physical plate reverb used in the studio in the 1980s. The plate reverb are large encased 4' by 6' sheets. They have a bright attack, and a warm/dark decay, as higher frequencies decay before the lower ones. When pushed, they can create a distinctive twang. The reflection `density` in this preset stays the same throughout the reverb.
 
 #### General Tips
 
@@ -267,6 +267,7 @@
 
 # Vocals
 
+- __Controlling singer's dynamics__ - Can tell singer to "sing like you're literally singing into somebody's ear". This helps prevent the singer from getting too loud on high notes.
 - __Adding clarity to vocals__ - 3 options:
   1. Go through entire song and add volume to lyrics that are hard to hear. Useful on consonants, especially softly sung fricatives after a vowel, like in the word `does`.
   2. Boost vocal volume in 2000 - 5000 kHz range.
