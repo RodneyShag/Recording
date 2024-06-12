@@ -31,9 +31,9 @@
 # Distortion
 
 - __Distortion from playback__ - Even once the music is released, distortion can occur at the listener’s end. Distortion can happen due to
- - playback method: such as through an analog amplifier
- - algorithm: such as on a streaming site
- - broadcast: such as compression applied during radio broadcasting
+  - playback method: such as through an analog amplifier
+  - algorithm: such as on a streaming site
+  - broadcast: such as compression applied during radio broadcasting
 - [Bitcrushing](https://youtu.be/84h64lTd8k0?si=2R6m7HdPGxBWk7mf) - Distortion created by reducing the bit depth of a sound.
 - [Downsampling](https://youtu.be/hRhVb6iRArg?si=cj8SaAHlRy1650oL) - To intentionally reduce the sample rate of a piece of audio.
 
@@ -134,7 +134,7 @@
 - __Low vs high frequencies__ - Headroom is the room we have before sound clips. Low frequencies take up more headroom than high frequencies. The more low-end in a mix, the less loud your mix can be.
 - __Alter EQ in context of your mix__ - your changes won't be heard in isolation. Make EQ changes while all other instrument tracks are playing.
 - __How do you know if instruments are in conflict?__ Distortion, typically a fuzzy sound caused by too much amplitude at a particular frequency range.
-- [Tilt EQ](http://www.github.com/RodneyShag/Recording/tilt_EQ.png) - a particular EQ style available on some plugins. The idea behind tilt is that using the usual filter can interfere with the timbre of a well-balanced sound. For example, attenuating a certain frequency of a piano can make it sound less like a piano. The answer to this is tilt. Tilt is a filter type that allows you to 'tilt' the frequency range around a pivot.
+- [Tilt EQ](http://www.github.com/RodneyShag/Recording/images/tilt_EQ.png) - a particular EQ style available on some plugins. The idea behind tilt is that using the usual filter can interfere with the timbre of a well-balanced sound. For example, attenuating a certain frequency of a piano can make it sound less like a piano. The answer to this is tilt. Tilt is a filter type that allows you to 'tilt' the frequency range around a pivot.
 - __Don't EQ vocals much__ - our ears are familiar with how a vocal should sound, so keep adjustments subtle.
 
 # Reverb
@@ -181,8 +181,8 @@
 - __Room reverbs__ have prominent early reflections (low `pre-delay`) and a short `decay`. When used delicately, they maintain a sense of intimacy. They sound fairly dry due to the short decay time.
 - __Hall reverbs__ simulate concert halls. Slow early reflections (low `pre-delay`), but longer reverb time (`decay`), and fairly even frequency distribution. Just like in concert halls, hall reverbs can slightly blur the sound, creating overlaps between notes. Often used for orchestral music, choirs, or pads.
 - __Chamber reverbs__ simulates reverb chambers and/or echo rooms built into old music studios. They are a useful all-around reverb and are designed for clarity.
-- __Spring reverb__ simulates artificial (physical) [spring reverb](http://www.github.com/RodneyShag/Recording/spring_reverb.png). It has a prominent twanging sound. Often used on percussive hits or synthesizer stabs.
-- __Plate reverb__ simulates old large [reverb plates](http://www.github.com/RodneyShag/Recording/plate_reverb.png) used in the studio, which are 4' by 6' sheets. They have a bright attack, and a warm/dark decay, as higher frequencies decay before the lower ones. When pushed, they can create a distinctive twang. The reflection `density` in this preset stays the same throughout the reverb.
+- __Spring reverb__ simulates artificial (physical) [spring reverb](http://www.github.com/RodneyShag/Recording/images/spring_reverb.png). It has a prominent twanging sound. Often used on percussive hits or synthesizer stabs.
+- __Plate reverb__ simulates old large [reverb plates](http://www.github.com/RodneyShag/Recording/images/plate_reverb.png) used in the studio, which are 4' by 6' sheets. They have a bright attack, and a warm/dark decay, as higher frequencies decay before the lower ones. When pushed, they can create a distinctive twang. The reflection `density` in this preset stays the same throughout the reverb.
 
 #### General Tips
 
