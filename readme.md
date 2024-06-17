@@ -4,6 +4,12 @@
 
 # Recording Techniques
 
+#### Recording
+
+- [Remove room reverb](#remove-room-reverb)
+- [Recording](#recording)
+- [Knowledge](#knowledge)
+
 #### Altering Sound
 
 - [Distortion](#distortion)
@@ -27,6 +33,70 @@
 
 - [Mastering](#mastering)
 - [Live Sound](#live-sound)
+
+
+# Remove Room Reverb
+
+- __[Flutter echo](https://www.youtube.com/watch?v=PucbcYkarzQ&ab_channel=Hello.Henning)__ happens when there are parallel walls in a room, causing the sound to bounce back and forth between them at equal intervals. This causes the room reverb to resemble more of a fast delay effect.
+- __Mirror points__ - these are the first sound reflection points in a room, that send the sound back to the listener or recording device. Sound-treat these mirror points first.
+- __2 ways to deal with reflections__
+  1. __Absorption__ - uses various materials to absorb sound.
+    - Low frequencies require a high level of absorption. For an absorber to be effective at treating a 100Hz audio signal it should be approximately 30cm thick, or approximately 60cm thick for a 50Hz signal. Use [bass Traps](images/bass_traps.jpg).
+    - Mid/High frequences - use acoustic foam panels from companies such as Auralex.
+    - __Absorptive materials__
+      - __Thick fiberglass board__ is consistently absorptive regardless of frequency.
+      - __Carpet__ is moderately absorptive at higher frequencies, but not at all absorptive at lower frequencies.
+  2. __[Diffusers](images/diffusers.jpg)__ spreads out sound waves so they're less troublesome.
+
+
+# Recording
+
+### Vocals
+
+- __Dynamic vs Condenser Microphone__
+  - __Dynamic microphones__
+    - __don't need batteries__ - just connect them to a sound system with a cable.
+    - __use a diaphragm and magnets to make sound__ - when sound enters the microphone, a diaphragm inside moves back and forth due to the sound waves. Magnets are used to create a low voltage electrical signal which is sent to the mixer.
+    - __are built rugged__ - they can be dropped and still work.
+  - __Condenser microphones__
+    - __need a power source to make sound__ - either a battery, or power from a mixer (labeled "phantom power")
+    - __use a diaphragm and 2 electrical plates to make sound__ - Built into condenser microphones are 2 electrically charged plates (which need battery or mixer power). The microphone’s diaphragm movements result in fluctuations in the electrical charge between the plates. This creates an electrical signal which is sent to the mixer.
+    - __are able to pick up finer nuances in sound__ as compared to dynamic microphones.
+- __Use a [pop filter](images/pop_filter.jpg)__ to prevent plosive consonants such as `p` and `b` from pushing too much air into the mic. The pop filter also prevents a singer from getting too close to a microphone.
+- __[Microphone shock mounts](https://youtu.be/n3P15ggj0Jc?si=aI3g7Ms8zumofFAZ)__ are used to prevent your microphone from unwanted vibrations (such as accidentally kicking the mic stand). Some microphones have some of this capability built in. Some condenser microphones also come with a free shock mount.
+- __Controlling singer's dynamics__ - can tell singer to "sing like you're literally singing into somebody's ear". This helps prevent the singer from getting too loud on high notes.
+- __Singer distance from mic__
+  - 6-8 inches desired. Closer is okay for more intimate performances. Maximum of 12 inches away to prevent adding too much room reverb.
+  - __Proximity Effect__ is the build-up of bass frequencies when the sound source (example: singer) is too close to a directional microphone.
+
+### Electro-Acoustic Guitar
+
+- __Do not plug in an electro-acoustic guitar for recording__ since it creates a thin sound not desirable for recording. Plugging it in is intended for live performances on stage.
+
+
+# Knowledge
+
+- __Cables: XLR, TRS, TS__
+  - [Balanced cables reduce noise](https://youtu.be/UQPJYWA5Y-o?si=ucumbE47D8f6Fa_3).
+  - Interior has 2 wires
+    - __TS Cables__ - `Tip Sleeve`. Used for `mono` `unbalanced` signals such as guitar. The `Tip` is the ground signal. The `Sleeve` is the mono signal.
+  - Interior has 3 wires
+    - __TRS Cables__ - `Tip Ring Sleeve`. Can be used either as:
+      - a `stereo` `unbalanced` signal. 1 wire for ground, 2 wires for stereo sound.
+      - a `mono` `balanced` signal. 1 wire for ground, 2 wires that combine for a mono signal (while removing unwanted noise).
+    - __XLR Cables__ are like TRS cables, but often used as `mono` `balanced` signals for microphones and speakers. The cables can be much longer since they're balanced signals.
+- __[Audio Signal Levels](https://youtu.be/Lxq2T0r3Jy4?si=eKHFSNxRfP0hu-dn)__ - [dbV is a logarithmic measurement for voltage](images/dbv_vs_voltage.jpg)
+  - __Line Level__ - about 1 volt. The standard signal level.
+  - __Mic Level__ - about 0.01 volts. Needs to be amplified to line level.
+  - __Instrument Level__ - about 1 volt. May need to be adjusted (usually up) to be at line level.
+  - __Speaker Level__ - about 10 volts. It's the strength of the signal after amplification.
+- __dBFS__ is decibel full scale. 0dB is the top of the meter, and anything above it will be clipped. When recording individual instruments, you can record below this, then raise it during mastering. Rough guidelines:
+  - signal peak at -10dB for transient sounds like drums.
+  - signal peak at -15dB for other instruments (or -20dB signal average).
+- __Phase problems from using 2 mics__ to record 1 sound source. If the mics are equidistant from the sound source, the waveforms will properly overlap. Otherwise:
+  - If the waveforms don't line up properly, they will partially cancel each other out, resulting in a weird sound primarily affecting the bass frequencies.
+  - If the waveforms are inverted relative to each other, they will 100% cancel each other out, and there will be no sound.
+  - To troubleshoot, play the 2 waveforms together, then invert 1 of the waveforms to see if the audio quality (especially the low end) improves. If so, you may have a phase problem. (Inversion makes the waveform's peaks become valleys, and valleys become peaks, and can be done with the click of a button in software. Button is usually a circle with a line through it.)
 
 # Distortion
 
@@ -59,7 +129,7 @@
     - __Peak vs Root Mean Square (RMS)__ define how the compressor listens for peaks above the Threshold. `Peak` has the compressor respond to short peaks in a signal, while `RMS` is more subtle as it averages the intensity of a sound over a period of time. RMS is more tolerant of sudden peaks in intensity.
   - __Ratio__ - Ratio is the extent to which you want the compressor to reduce the intensity of anything above the level set by your Threshold. For example, if you have a signal 6dB above the threshold, a 3:1 Ratio will reduce it by 4dB, making it just 2dB above the threshold. A `Limiter` is when the Ratio is ∞:1. If using a limiter, make sure it's the last effect applied to the sound.
   - __Attack__ - time it takes for compressor to start compressing. A slower attack time lets the sound introduce itself before being shaped by the compressor.
-  - __Release__ - time it takes for compressor to stop compressing. Can try to fit this timing to the rhythm of the song. Some compressors have `Auto Release`, which decides the release time for you.
+  - __Release__ - time it takes for compressor to stop compressing. Can try to fit this timing to the rhythm/tempo of the song, so the compression can stop right before the next beat. Some compressors have `Auto Release`, which decides the release time for you.
   - __Make-up gain__ - Compressing peaks lowers the signals volume. `Make-up gain` is a volume knob that raises it back up. `Auto gain` is an option on some compressors to do this automatically.
 - __Multiband compression__ lets you apply different compression settings to different frequency bands. This prevents one frequency band from triggering compression on all frequency bands.
 
@@ -157,9 +227,6 @@
   1. Transmission - some of the sound waves move through the object.
   2. Reflection - some of the sound waves bounce off the object, creating echoes.
   3. Absorption - some of the sound waves get 'trapped' by the object itself, where their energy is transformed into a small amount of heat.
-- __Absorptive materials__
-  - __Thick fiberglass board__ is consistently absorptive regardless of frequency
-  - __Carpet__ is moderately absorptive at higher frequencies, but not at all absorptive at lower frequencies.
 - __Effect on `pre-delay`__ - no effect.
 - __Effect on `decay`__ - sound decays faster since materials absorb the sound.
 - __Effect on `density`__ - no effect.
@@ -267,12 +334,12 @@
 
 # Vocals
 
-- __Controlling singer's dynamics__ - Can tell singer to "sing like you're literally singing into somebody's ear". This helps prevent the singer from getting too loud on high notes.
+- __4 main plugins you need__ - EQ, Compression, DeEsser, Delay/Reverb
 - __Adding clarity to vocals__ - 3 options:
   1. Go through entire song and add volume to lyrics that are hard to hear. Useful on consonants, especially softly sung fricatives after a vowel, like in the word `does`.
   2. Boost vocal volume in 2000 - 5000 kHz range.
   3. Lower competing instrument volume in 2000 - 5000 kHz range.
-- __Use de-esser to remove sibilance__ - A sibilant is a form of consonant that has an `ess` sound, which can sometimes prominently hiss. This includes `s`, `z`, `sh`, `zh`, and possibly `ch`. A _de-esser_ plugin finds the frequencies where these `ess` sounds are occurring and lowers the volume at those frequencies.
+- __Use de-esser to remove sibilance__ - A sibilant is a form of consonant that has an `ess` sound, which can sometimes prominently hiss. This includes `s`, `z`, `sh`, `zh`, and possibly `ch`. A _de-esser_ plugin finds the frequencies where these `ess` sounds are occurring and lowers the volume at those frequencies. If vocal loses clarity due to the de-esser, you can try boosting the 7000 Hz frequency by 4dB to compensate.
 - __Use pitch correction with care__ - Listen carefully and apply pitch correction only to notes that feel wrong. Can use _Melodyne_ or _Autotune_ software.
 
 # Time Alignment
@@ -285,6 +352,7 @@
 # Creating Depth
 
 - __Depth__ is the sensation that some sounds are further away, while others are closer to the listener.
+- __Don't have everything loud and up front__ because then there's no depth in the mix. If everything is loud, then nothing stands out.
 
 ### Sound Distance
 
@@ -354,13 +422,21 @@
 
 # Mastering
 
-- __Mastering is__ editing the stereo out. You don't have access to individual tracks.
-- __Can add reverb in mastering__ to put the mix in a shared room. Affects all tracks as a whole.
+- __Mastering is__
+  - editing the stereo out. You don't have access to individual tracks.
+  - preparing the music for the release medium (digital download, cd, etc.)
+- __Can add__
+  - __reverb__ to put the mix in a shared room. Affects all tracks as a whole.
+  - __volume__ if the mix is too quiet.
+  - __compression then limiting__ if the mix is too quiet. Don't set limiter to 0dB. Instead aim for -0.3dB to -1dB.
+  - __eq__ balancing on the whole track
+  - __stereo widening__ effects
 - __Peak volume levels__
   - -6dB: Intro/Interlude
   - -3dB: Verse
   -  0dB (close to it): Chorus/Solo
-
+- __If mastering an album, ensure there's a consistent sound__ throughout the tracks.
+- __Exporting__ is commonly done as `.wav` format. It's uncompressed.
 
 # Live Sound
 
@@ -371,16 +447,6 @@
 
 #### Equipment
 
-- __Dynamic vs Condenser Microphone__
-  - __Dynamic microphones__
-    - __don't need batteries__ - just connect them to a sound system with a cable.
-    - __use a diaphragm and magnets to make sound__ - when sound enters the microphone, a diaphragm inside moves back and forth due to the sound waves. Magnets are used to create a low voltage electrical signal which is sent to the mixer.
-    - __are built rugged__ - they can be dropped and still work.
-  - __Condenser microphones__
-    - __need a power source to make sound__ - either a battery, or power from a mixer (labeled "phantom power")
-    - __use a diaphragm and 2 electrical plates to make sound__ - Built into condenser microphones are 2 electrically charged plates (which need battery or mixer power). The microphone’s diaphragm movements result in fluctuations in the electrical charge between the plates. This creates an electrical signal which is sent to the mixer.
-    - __are able to pick up finer nuances in sound__ as compared to dynamic microphones.
-- __XLR Cables are great at reducing noise__ since they have 3 pins (two for audio, one for neutral/ground). They can be much longer than guitar cables (which are 1/4-inch cables) while limiting noise.
 - __Speakers__
   - __Front of House Speakers__ are the main speakers connected to the mixer's main outputs.
   - __Monitor Speakers__ are pointed to performers on stage so they can hear themselves better. They are implemented as auxiliary buses on the mixer so that volumes of each instrument can be adjusted, without affecting the Front-of-House speakers.
