@@ -41,12 +41,12 @@
 - __Mirror points__ - these are the first sound reflection points in a room, that send the sound back to the listener or recording device. Sound-treat these mirror points first.
 - __2 ways to deal with reflections__
   1. __Absorption__ - uses various materials to absorb sound.
-    - Low frequencies require a high level of absorption. For an absorber to be effective at treating a 100Hz audio signal it should be approximately 30cm thick, or approximately 60cm thick for a 50Hz signal. Use [bass Traps](images/bass_traps.jpg).
+    - Low frequencies require a high level of absorption. For an absorber to be effective at treating a 100Hz audio signal it should be approximately 30cm thick, or approximately 60cm thick for a 50Hz signal. Use [bass traps](images/bass_traps.jpg).
     - Mid/High frequences - use acoustic foam panels from companies such as Auralex.
     - __Absorptive materials__
       - __Thick fiberglass board__ is consistently absorptive regardless of frequency.
       - __Carpet__ is moderately absorptive at higher frequencies, but not at all absorptive at lower frequencies.
-  2. __[Diffusers](images/diffusers.jpg)__ spreads out sound waves so they're less troublesome.
+  2. __Diffusion__ - [diffusers](images/diffusers.jpg) spreads out sound waves so they're less troublesome.
 
 
 # Recording
@@ -85,7 +85,7 @@
       - a `stereo` `unbalanced` signal. 1 wire for ground, 2 wires for stereo sound.
       - a `mono` `balanced` signal. 1 wire for ground, 2 wires that combine for a mono signal (while removing unwanted noise).
     - __XLR Cables__ are like TRS cables, but often used as `mono` `balanced` signals for microphones and speakers. The cables can be much longer since they're balanced signals.
-- __[Audio Signal Levels](https://youtu.be/Lxq2T0r3Jy4?si=eKHFSNxRfP0hu-dn)__ - [dbV is a logarithmic measurement for voltage](images/dbv_vs_voltage.jpg)
+- __[Audio Signal Levels](https://youtu.be/Lxq2T0r3Jy4?si=eKHFSNxRfP0hu-dn)__ - [dBV is a logarithmic measurement for voltage](images/dbv_vs_voltage.jpg)
   - __Line Level__ - about 1 volt. The standard signal level.
   - __Mic Level__ - about 0.01 volts. Needs to be amplified to line level.
   - __Instrument Level__ - about 1 volt. May need to be adjusted (usually up) to be at line level.
