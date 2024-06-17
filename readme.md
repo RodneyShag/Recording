@@ -10,19 +10,19 @@
 - [Recording](#recording)
 - [Knowledge](#knowledge)
 
-#### Altering Sound
+#### Mixing Sound
 
 - [Distortion](#distortion)
 - [Compression](#compression)
 - [EQ](#eq)
 - [Reverb](#reverb)
 
-#### Instruments
+#### Mixing Instruments
 
 - [Drums](#drums)
 - [Vocals](#vocals)
 
-#### Techniques
+#### Mixing Techniques
 
 - [Time Alignment](#time-alignment)
 - [Creating Depth](#creating-depth)
@@ -40,13 +40,13 @@
 - __[Flutter echo](https://www.youtube.com/watch?v=PucbcYkarzQ&ab_channel=Hello.Henning)__ happens when there are parallel walls in a room, causing the sound to bounce back and forth between them at equal intervals. This causes the room reverb to resemble more of a fast delay effect.
 - __Mirror points__ - these are the first sound reflection points in a room, that send the sound back to the listener or recording device. Sound-treat these mirror points first.
 - __2 ways to deal with reflections__
-  1. __Absorption__ - uses various materials to absorb sound.
+  - __Diffusion__ - [diffusers](images/diffusers.jpg) spread out sound waves so they're less troublesome.
+  - __Absorption__ - uses various materials to absorb sound.
     - Low frequencies require a high level of absorption. For an absorber to be effective at treating a 100Hz audio signal it should be approximately 30cm thick, or approximately 60cm thick for a 50Hz signal. Use [bass traps](images/bass_traps.jpg).
     - Mid/High frequences - use acoustic foam panels from companies such as Auralex.
     - __Absorptive materials__
       - __Thick fiberglass board__ is consistently absorptive regardless of frequency.
       - __Carpet__ is moderately absorptive at higher frequencies, but not at all absorptive at lower frequencies.
-  2. __Diffusion__ - [diffusers](images/diffusers.jpg) spreads out sound waves so they're less troublesome.
 
 
 # Recording
