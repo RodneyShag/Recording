@@ -28,6 +28,7 @@
 - [Creating Depth](#creating-depth)
 - [Cool Tricks](#cool-tricks)
 - [General Tips](#general-tips)
+- [Mixing EDM](#mixing-edm)
 
 #### Output
 
@@ -271,7 +272,7 @@
 - __Relation between `pre-delay` and `decay`__.
   - They generally grow with the size of the room, so they should either be both low or both high.
   - Low `pre-delay`, high `decay`. This can happen in a long tunnel, or near a wall in a large room. In both cases, the first reflection will come back quickly, while the size of the room guarantees a long reverb time.
-- __Group similar instruments__ - Instruments of a similar category should occupy similar spaces. Can send instruments of comparable sonic character to a single aux channel (and maybe add a short reverb)
+- __Group similar instruments__ - Instruments of a similar category should occupy similar spaces. Can send instruments of comparable sonic character to a single bus channel and add the same reverb to them as a whole.
   - __Bus channel__ - a sum of mixer tracks sent to a channel. Each track has 100% of its output sent to the bus channel.
   - __Aux channel__ - a combination of mixer tracks sent to a channel. Each track can have 0 to 100% of its output sent to the auxiliary channel.
   - __Aux vs Bus__ - busses can be used to control a group of tracks simultaneously. Auxes can be used to send variable signals to monitors in a live setting.
@@ -342,6 +343,7 @@
 - __Use de-esser to remove sibilance__ - A sibilant is a form of consonant that has an `ess` sound, which can sometimes prominently hiss. This includes `s`, `z`, `sh`, `zh`, and possibly `ch`. A _de-esser_ plugin finds the frequencies where these `ess` sounds are occurring and lowers the volume at those frequencies. If vocal loses clarity due to the de-esser, you can try boosting the 7000 Hz frequency by 4dB to compensate.
 - __Use pitch correction with care__ - Listen carefully and apply pitch correction only to notes that feel wrong. Can use _Melodyne_ or _Autotune_ software.
 
+
 # Time Alignment
 
 - __Aim to get other instruments reasonably locked in with the drums__, particularly on the 1st and 3rd beat (in 4/4 time).
@@ -377,7 +379,7 @@
 - __Locations to pan__
   - Center
     - Drums (especially kick-drum and snare)
-    - Bass instruments
+    - Bass instruments (for example, below 200 Hz)
     - Lead Vocal
     - Solo instruments
   - Left/Right
@@ -400,7 +402,8 @@
     - A kick-drum sidechain (temporarily) lowers bass volume on every hit
     - A vocal sidechain lowers guitar volume when vocalist sings
 - __Dynamic focus__ - as the song progresses, you can shift the focus point around the mix, focusing the listener's ears on which parts of the music should stand out at different moments. This can be done by adjusting volume (or compression), tweaking tone (or EQ), adding effects, or panning. It's like saying, "Listen to this, focus here, now here" as you manipulate the sonic environment. This highlights some elements and pushes others to the background.
-- __Haas effect__ is adding a small delay between left and right channels, creating a wide stereo sound. Can be done with any stereo plugin.
+- __Haas effect__ is adding a small delay between left and right channels, creating a wide stereo sound. Can be done with _stereo enhancer_ plugins.
+  - __Stereo enhancing using delay__ causes loss of tightness (since it spreads out transients). Low-frequency dominant instruments such as kick-drums should stay in mono for this reason.
 - __Micro pitch shifting__ is the _haas effect_ (explained above) combined with pitch shifting each side (left and right) to the opposite directions (up and down). It's useful for melodic instruments and vocals, providing a pleasant detuned character. Can be done by hand, or with a plugin.
 - __Add chorus effect to background instruments__ such as background vocals, strings, pads, and rhythm guitars.
 - __Cross-fade 2 tracks__ - Fade one track out, while fading another track in.
@@ -413,11 +416,22 @@
   - _barely audible_ - you will instantly hear which elements dominate the mix in volume, and in a good mix every important element should be audible at a very low level.
   - _comfortable listening level_
   - _very loud_ - listen for instruments that might actually "hurt" your ears a little bit while listening. If you spot any, lower their volume.
+- __Macro-mixing approach__ - a non-standard approach. Focus on 'macro' before 'micro'. Treat groups of similar instruments with EQ, compression, effects, etc., before working on individual tracks
+- __Use Automation__ - to automate means to perform a parameter adjustment that usually varies over time. The most common parameter to automate is a track’s volume level, but also includes, panning, mute, equalization, and effect plugin. It's done manually, but is then 'automatic' during playback.
 - __Use a spectrum analyzer__ This visually shows the volume of each frequency, revealing possible frequencies that are too loud or soft.    
   - especially useful for low frequencies if you don't have giant subwoofers.
   - if any frequencies are lacking, can add EQ or new instruments to fill the gaps.
-- __Macro-mixing approach__ - a non-standard approach. Focus on 'macro' before 'micro'. Treat groups of similar instruments with EQ, compression, effects, etc., before working on individual tracks
-- __Use Automation__ - to automate means to perform a parameter adjustment that usually varies over time. The most common parameter to automate is a track’s volume level, but also includes, panning, mute, equalization, and effect plugin. It's done manually, but is then 'automatic' during playback.
+
+
+# Mixing EDM
+
+- __EDM__ is Electronic Dance Music.
+- __Use a spectrum analyzer on reference EDM songs__ to see visually what your song should _look_ like.
+- __Aggressive EDM has 3 main frequency peaks__ - in aggressive EDM styles (hardstyle, hardcore), there are usually 3 main peaks on a spectrum analyzer, which are about equally loud:
+    - sub-bass frequencies at   40 -    60 Hz
+    - mid      frequencies at  400 -  1000 Hz
+    - high     frequencies at 4000 - 12000 Hz
+- __Mild EDM has 2-3 main frequency peaks__ - in mild EDM styles (trance, house), there's less distinction between the 3 main peaks. The mid peak isn't as loud as the sub-bass and high peaks.
 
 
 # Mastering
@@ -427,16 +441,17 @@
   - preparing the music for the release medium (digital download, cd, etc.)
 - __Can add__
   - __reverb__ to put the mix in a shared room. Affects all tracks as a whole.
-  - __volume__ if the mix is too quiet.
-  - __compression then limiting__ if the mix is too quiet. Don't set limiter to 0dB. Instead aim for -0.3dB to -1dB.
-  - __eq__ balancing on the whole track
+  - __EQ__ balancing on the whole track
   - __stereo widening__ effects
-- __Peak volume levels__
+  - __compression then limiting__ if the mix is too quiet. Don't set limiter to 0dB. Instead aim for -0.3dB to -1dB.
+  - __volume__ if the mix is too quiet.
+- __Peak volume levels__ - most important step of mastering is to ensure the audio is loud enough (without distortion)
   - -6dB: Intro/Interlude
   - -3dB: Verse
   -  0dB (close to it): Chorus/Solo
 - __If mastering an album, ensure there's a consistent sound__ throughout the tracks.
 - __Exporting__ is commonly done as `.wav` format. It's uncompressed.
+
 
 # Live Sound
 
