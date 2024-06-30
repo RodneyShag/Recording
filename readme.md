@@ -63,12 +63,14 @@
     - __need a power source to make sound__ - either a battery, or power from a mixer (labeled "phantom power")
     - __use a diaphragm and 2 electrical plates to make sound__ - Built into condenser microphones are 2 electrically charged plates (which need battery or mixer power). The microphone’s diaphragm movements result in fluctuations in the electrical charge between the plates. This creates an electrical signal which is sent to the mixer.
     - __are able to pick up finer nuances in sound__ as compared to dynamic microphones.
+    - __size of internal diaphragm__ - a large diaphragm captures low frequencies better. A small diaphragm captures high frequencies better.
 - __Use a [pop filter](images/pop_filter.jpg)__ to prevent plosive consonants such as `p` and `b` from pushing too much air into the mic. The pop filter also prevents a singer from getting too close to a microphone.
 - __[Microphone shock mounts](https://youtu.be/n3P15ggj0Jc?si=aI3g7Ms8zumofFAZ)__ are used to prevent your microphone from unwanted vibrations (such as accidentally kicking the mic stand). Some microphones have some of this capability built in. Some condenser microphones also come with a free shock mount.
 - __Controlling singer's dynamics__ - can tell singer to "sing like you're literally singing into somebody's ear". This helps prevent the singer from getting too loud on high notes.
 - __Singer distance from mic__
   - 6-8 inches desired. Closer is okay for more intimate performances. Maximum of 12 inches away to prevent adding too much room reverb.
   - __Proximity Effect__ is the build-up of bass frequencies when the sound source (example: singer) is too close to a directional microphone.
+- __Use 'punch-ins' to fix wrong notes__. This is how wrong notes were fixed before _Autotune_. Works on both vocals and instruments. Instead of just singing the 1 wrong note again, sing a sentence or two, and save the corrected note you need. It should feel and sound more natural when sung in context, and should sound better than an autotuned note.
 
 ### Electro-Acoustic Guitar
 
@@ -105,7 +107,7 @@
   - playback method: such as through an analog amplifier
   - algorithm: such as on a streaming site
   - broadcast: such as compression applied during radio broadcasting
-- __[Bitcrushing](https://youtu.be/84h64lTd8k0?si=2R6m7HdPGxBWk7mf)__ - Distortion created by reducing the bit depth of a sound.
+- __[Bitcrushing](https://youtu.be/84h64lTd8k0?si=2R6m7HdPGxBWk7mf)__ - Distortion created by reducing the bit depth of a sound. It's a good way to simulate 8-bit video game sounds from the 1980s.
 - __[Downsampling](https://youtu.be/hRhVb6iRArg?si=cj8SaAHlRy1650oL)__ - To intentionally reduce the sample rate of a piece of audio.
 
 #### Distorting instruments
@@ -132,6 +134,7 @@
   - __Attack__ - time it takes for compressor to start compressing. A slower attack time lets the sound introduce itself before being shaped by the compressor.
   - __Release__ - time it takes for compressor to stop compressing. Can try to fit this timing to the rhythm/tempo of the song, so the compression can stop right before the next beat. Some compressors have `Auto Release`, which decides the release time for you.
   - __Make-up gain__ - Compressing peaks lowers the signals volume. `Make-up gain` is a volume knob that raises it back up. `Auto gain` is an option on some compressors to do this automatically.
+  - __Wet/Dry__ - This allows a compressed (Wet) sound to be mixed with the uncompressed (Dry) sound. This can help transients cut through from the original sound, while the compressor beefs things up.
 - __Multiband compression__ lets you apply different compression settings to different frequency bands. This prevents one frequency band from triggering compression on all frequency bands.
 
 #### Top-down vs Bottom-up Compression
@@ -273,9 +276,10 @@
   - They generally grow with the size of the room, so they should either be both low or both high.
   - Low `pre-delay`, high `decay`. This can happen in a long tunnel, or near a wall in a large room. In both cases, the first reflection will come back quickly, while the size of the room guarantees a long reverb time.
 - __Group similar instruments__ - Instruments of a similar category should occupy similar spaces. Can send instruments of comparable sonic character to a single bus channel and add the same reverb to them as a whole.
-  - __Bus channel__ - a sum of mixer tracks sent to a channel. Each track has 100% of its output sent to the bus channel.
-  - __Aux channel__ - a combination of mixer tracks sent to a channel. Each track can have 0 to 100% of its output sent to the auxiliary channel.
-  - __Aux vs Bus__ - busses can be used to control a group of tracks simultaneously. Auxes can be used to send variable signals to monitors in a live setting.
+  - __Bus channel__ - a sum of mixer tracks sent to a channel. Each track has 100% of its output sent to the bus channel. A bus is used to control a group of tracks simultaneously.
+  - __Aux channel__ - a combination of mixer tracks sent to a channel. Each track can have 0 to 100% of its output sent to the auxiliary channel. Auxes can be used to:
+    - __send multiple tracks (as an aux) at different levels to monitors in a live setting__
+    - __send multiple tracks (as an aux) to an effect__ or chain of effects. Each track is called a `send`, and the aux is called a `return`. This works well for effects that are added to the original sound (such as reverb and delay) since they add to the original _dry_ sound. Effects that alter the original sound (such as distortion, autopan, filter, chorus/flange) don't work well since the _wet_ sound of the effect isn't intended to be combined with the _dry_ sound.
 - __Frequencies to reverb__
   - don't add reverb to kick-drum or bass.
   - don't add reverb to low frequencies (below 50 Hz or below 250 Hz). They create a muddy sound.
@@ -333,6 +337,13 @@
   - try extreme variations.
   - use silence instead of a drum fill.
 
+#### Troubleshooting
+
+- __A sound isn't cutting through the mix?__
+  - It may be lacking a good transient. Ensure compression isn't affecting the transient.
+  - Fix it with EQ. Do a small EQ boost at the frequency that gives the most clarity, then reduce the same frequency on other instruments that may be interfering.
+
+
 # Vocals
 
 - __4 main plugins you need__ - EQ, Compression, DeEsser, Delay/Reverb
@@ -378,7 +389,7 @@
 - __Don't pan bass sounds__ - bass-heavy sound sources are generally more difficult to locate and are perceived as coming from the center even if they aren't there.
 - __Locations to pan__
   - Center
-    - Drums (especially kick-drum and snare)
+    - Drums: kick-drum, snare, hi-hat
     - Bass instruments (for example, below 200 Hz)
     - Lead Vocal
     - Solo instruments
@@ -386,12 +397,14 @@
     - Rhythm guitar
     - Rhythm keyboards
     - Background vocals (especially if more than 1)
-- __Don't pan 100% left or right__. It sounds unnatural, especially on headphones. In real life, a sound to your left still gets heard by your right ear (a little bit later in time after your left ear)
+    - Drum toms (optional)
+    - Sound effects can be sprinkled through the panning field, filling in empty spaces.
+- __Don't pan 100% left or right__. It sounds unnatural, especially on headphones. In real life, a sound to your left still gets heard by your right ear (about 1 millisecond later after your left ear)
 - __Create left-right balance__. If panning an instrument left, pan another instrument right. Look at volume meters to ensure balance. Can pan rhythm guitar left, and keyboard pads right.
 - __Creative panning__
   - __Instrument panned one side, reverb (or delay) panned opposite side__ - can be used on guitars & pianos.
   - __Dynamically pan the reverb__ - Have guitar & reverb panned to same side, then move the reverb slowly from 1 side to another. The listener might feel that something is happening in the sound field but might not know exactly what it is.
-
+  - __Use ping-pong delay__ to give the delay stereo movement
 
 # Cool Tricks
 
@@ -399,8 +412,11 @@
   - A setup where Signal A affects Signal B, usually making the Signal B intentionally less audible.
   - __Examples__
     - A radio DJ's voice lowers the volume of a track when he's speaking
-    - A kick-drum sidechain (temporarily) lowers bass volume on every hit
     - A vocal sidechain lowers guitar volume when vocalist sings
+    - A kick-drum sidechain (temporarily) lowers bass volume on every hit. Steps:
+      1. Add a compressor with sidechain capability to your bass track.
+      2. Set a high `ratio`, and set an `attack` as fast as possible. The lower you set `threshold`, the more it pushes down the volume of the bass when a kick drum is played.
+      3. Adjust `decay` to affect how long your bass volume stays low every time it's compressed.
 - __Dynamic focus__ - as the song progresses, you can shift the focus point around the mix, focusing the listener's ears on which parts of the music should stand out at different moments. This can be done by adjusting volume (or compression), tweaking tone (or EQ), adding effects, or panning. It's like saying, "Listen to this, focus here, now here" as you manipulate the sonic environment. This highlights some elements and pushes others to the background.
 - __Haas effect__ is adding a small delay between left and right channels, creating a wide stereo sound. Can be done with _stereo enhancer_ plugins.
   - __Stereo enhancing using delay__ causes loss of tightness (since it spreads out transients). Low-frequency dominant instruments such as kick-drums should stay in mono for this reason.
@@ -416,11 +432,22 @@
   - _barely audible_ - you will instantly hear which elements dominate the mix in volume, and in a good mix every important element should be audible at a very low level.
   - _comfortable listening level_
   - _very loud_ - listen for instruments that might actually "hurt" your ears a little bit while listening. If you spot any, lower their volume.
+    - __you will adjust to the loud volume__ - during a rock concert, there is a temporary threshold shift. The brain grabs muscles on the ear drum and tightens it to turn down the volume within your ear. As a result, engineers will gradually turn up the volume throughout the evening. After a while, the muscles get tired and don't hold back the volume levels as much.
 - __Macro-mixing approach__ - a non-standard approach. Focus on 'macro' before 'micro'. Treat groups of similar instruments with EQ, compression, effects, etc., before working on individual tracks
 - __Use Automation__ - to automate means to perform a parameter adjustment that usually varies over time. The most common parameter to automate is a track’s volume level, but also includes, panning, mute, equalization, and effect plugin. It's done manually, but is then 'automatic' during playback.
 - __Use a spectrum analyzer__ This visually shows the volume of each frequency, revealing possible frequencies that are too loud or soft.    
   - especially useful for low frequencies if you don't have giant subwoofers.
   - if any frequencies are lacking, can add EQ or new instruments to fill the gaps.
+
+### Mono mixing
+
+- __How to listen in mono__ - use only 1 speaker. Run a mono signal to it.
+- __Benefits__
+  - __Detects phasing issues__
+  - __Detects panning issues__ - when a stereo mix is converted to mono, stereo effects, extreme panning, and ping pong delays may sound weird and need to be fixed.
+  - __Helps hear balance of instruments__ - when the sound of both speakers are superimposed on each other in mono, it's easier to hear if any instruments are too loud/soft.
+  - __Detects competing instruments__ - mono can reveal if instruments are competing to be heard in a specific frequency range more easily than stereo.
+  - __Can listen from anywhere in the room__ - mixing in stereo requires positioning yourself to hear exactly 50% from each speaker. In mono, you can be anywhere in the room while listening.
 
 
 # Mixing EDM
@@ -440,18 +467,21 @@
   - editing the stereo out. You don't have access to individual tracks.
   - preparing the music for the release medium (digital download, cd, etc.)
 - __Can add__
-  - __reverb__ to put the mix in a shared room. Affects all tracks as a whole.
   - __EQ__ balancing on the whole track
-  - __stereo widening__ effects
-  - __compression then limiting__ if the mix is too quiet. Don't set limiter to 0dB. Instead aim for -0.3dB to -1dB.
-  - __volume__ if the mix is too quiet.
+  - __Compressor__ if the mix is too quiet.
+  - __Stereo widening__ effects
+  - __Reverb__ to put the mix in a shared room. Affects all tracks as a whole.
+  - __Limiting then Volume__ if the mix is too quiet. Don't set limiter to 0dB. Instead aim for -0.3dB to -1dB.
 - __Peak volume levels__ - most important step of mastering is to ensure the audio is loud enough (without distortion)
   - -6dB: Intro/Interlude
   - -3dB: Verse
   -  0dB (close to it): Chorus/Solo
 - __If mastering an album, ensure there's a consistent sound__ throughout the tracks.
+- __Mastering Process__ 2 options:
+  1. Export the mix to a `.wav` file and start a new project
+  2. Go to the stereo-out in the current project, and master that.
 - __Exporting__ is commonly done as `.wav` format. It's uncompressed.
-
+- __If sending mix to mastering engineer__, don't master it yourself, since they can't undo your mastering job, and will be limited as to what they can do. Have the track be at `-6dB`, and never peak above `-3dB`. Then send it to a mastering engineer.
 
 # Live Sound
 
@@ -476,6 +506,7 @@
     - If too low: more noise, since we have to increase it's output volume
     - If too high: sound distorts/clips
     - Aim for the _average_ incoming signal (not the maximum) to match the mixer's nominal level.
+- __An 'insert'__ is an access point built into the mixing console, used to add external line level devices into the signal flow between the microphone preamplifier and the mix bus. Effects such as compression/reverb can be added.    
 - __Faders on mixer__
   - One for each channel.
   - Controls output volume.
